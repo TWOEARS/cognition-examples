@@ -73,8 +73,8 @@ classdef AudioVisualSource < handle
                                  %  continuously
             
             
-            obj.trueReliabilitiesSet=max(min(normrnd(0.9,0.01,1,10000),1.0),0.0);
-            obj.wrongReliabilitiesSet=max(min(normrnd(0.1,0.05,1,10000),1.0),0.0);
+            obj.trueReliabilitiesSet=max(min(nrnd(0.9,0.01,10000),1.0),0.0);
+            obj.wrongReliabilitiesSet=max(min(nrnd(0.1,0.05,10000),1.0),0.0);
 
            
             obj.stressLevels=-ones(1,10000)*1000;
@@ -163,13 +163,13 @@ classdef AudioVisualSource < handle
         
         function adaptStressMetaInformation(obj)
             if obj.stress>0
-                obj.stressLevels=max(min(normrnd(obj.stress,0.025,1,10000),1.0),0.0);
+                obj.stressLevels=max(min(nrnd(obj.stress,0.025,10000),1.0),0.0);
             end
         end
         
         function adaptLoudnessMetaInformation(obj)
             if obj.loudness>0
-                obj.loudnessLevels=max(min(normrnd(obj.loudness,0.025,1,10000),1.0),0.0);
+                obj.loudnessLevels=max(min(nrnd(obj.loudness,0.025,10000),1.0),0.0);
             else
                 
             end
@@ -177,7 +177,7 @@ classdef AudioVisualSource < handle
         
         function adaptAgeMetaInformation(obj)
             if obj.age>0
-                obj.ageDistribution=max(min(normrnd(obj.age,2,1,10000),100),0.0);
+                obj.ageDistribution=max(min(nrnd(obj.age,2,10000),100),0.0);
             else
                
             end

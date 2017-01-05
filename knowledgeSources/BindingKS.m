@@ -113,7 +113,7 @@ classdef BindingKS < AbstractKS
                     % formulate an entry in the segregation hypothesis
 
                     % only if there is at least one active source!
-                    segHyp.azimuths{1,end+1}=azimuthH+normrnd(0.0,1.0);
+                    segHyp.azimuths{1,end+1}=azimuthH+nrnd(0.0,1.0,1);
                     segHyp.labels{1,end+1}=name;
                 end
                 

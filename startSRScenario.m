@@ -40,10 +40,11 @@
 % more powerful BEFT, which, however, requires a non-trivial installation
 % procedure.
 
-
+% Start LVTE parts
+addpath('src/');
+startFeedbackAndAttention();
 
 % initialize the Two!Ears system
-startFeedbackAndAttention();
 startTwoEars();
 
 

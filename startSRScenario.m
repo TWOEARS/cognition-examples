@@ -27,8 +27,8 @@
 
 
 
-% Usage instructions: first, go to the 'cognition' directory.
-% Then, just start the example by typing 'startSRScenario'. From here on,
+% Usage instructions:
+% Just start the example by typing 'startSRScenario'. From here on,
 % everything is automated: the scene is loaded from the given environment
 % descriptor, the appropriate sound source activation schedule is loaded,
 % and the simulation is started. You will then see the virtual robot from a
@@ -43,6 +43,7 @@
 
 
 % initialize the Two!Ears system
+startFeedbackAndAttention();
 startTwoEars();
 
 

@@ -1,7 +1,3 @@
-
-
-
-
 % This example demonstrates the capabilities of the S&R-rescue methods set up
 % in WP4. To that end, a baseline visualizer (LVTE) shows the current scenario status in
 % 2 dimensions from a bird's view. The robot is indicated as a blue star with

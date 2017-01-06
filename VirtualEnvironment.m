@@ -134,6 +134,14 @@ classdef VirtualEnvironment < handle
             ret=false;
         end
         
+
+		% Is the simulation active? This function is required for
+		% communication with the blackboard system.
+		%
+		% inputs:   none
+		function ret=isActive(h)
+			 ret=true;
+		end
         
         
         % Enforce head rotation? This function is required for
